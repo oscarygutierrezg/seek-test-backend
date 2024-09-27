@@ -12,7 +12,6 @@ public class PrivilegeRepositoryImpl implements PrivilegeRepositoryPort {
 
     private final  PrivilegeJpaRepository privilegeJpaRepository;
 
-
     @Override
     public Privilege findByName(String name) {
         return privilegeJpaRepository.findByName(name);

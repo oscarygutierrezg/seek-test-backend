@@ -31,8 +31,9 @@ public class JwtUserDetailsService implements UserDetailsService {
             if (user.isEmpty()) {
                 throw new UsernameNotFoundException("No user found with username: " + username);
             }
-
             return new User(user.get().getEmail(), user.get().getPassword(), true, true, true, true, getAuthorities(user.get().getRoles()));
+        } catch (final UsernameNotFoundException e) {
+            throw e;
         } catch (final Exception e) {
             throw new RuntimeException(e);
         }
@@ -63,5 +64,5 @@ public class JwtUserDetailsService implements UserDetailsService {
         }
         return authorities;
     }
- 
+
 }
