@@ -14,6 +14,11 @@ mvn spring-boot:run
 To test in local, you can import the following Postman [collection.](postman/Candidates_API.postman_collection.json)
 
 ## Swagger test
-To test on the web, enter the following link
-[link](http://localhost:8080/swagger-ui/index.html) in a browser
+To test on the web, enter the following links:
+<br>
+for local [link](http://localhost:8080/swagger-ui/index.html)
+<br>
+for heroku [link](https://seek-test-backend-c5a9255af755.herokuapp.com/swagger-ui/index.html)
+<br>
+in a browser
 
